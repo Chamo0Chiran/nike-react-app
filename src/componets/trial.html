@@ -1,0 +1,57 @@
+<main class="p-5">
+    <h1 class="text-center text-lg text-green-400">Hello World</h1>
+
+    <div class="my-4 h-10 w-full rounded-md border-2 border-violet-600 bg-violet-200 p-2">
+        <p class="text-center font-mono font-extrabold">A f=DIV</p>
+    </div>
+    <div class="fixed top-0 h-10 w-10 bg-red-500"></div>
+    <div class="flex justify-between">
+        <div class="h-16 w-16 rounded-full bg-blue-600"></div>
+        <div class="h-16 w-16 rounded-full bg-blue-600"></div>
+        <div class="h-16 w-16 rounded-full bg-blue-600"></div>
+    </div>
+    <div class="mt-3 grid grid-cols-3 gap-2">
+        <div class="h-12 bg-violet-500"></div>
+        <div class="h-12 bg-violet-500"></div>
+        <div class="h-12 bg-violet-500"></div>
+    </div>
+    <div class="hidden md:block">I appear on screens >= 780px</div>
+    <div class="hidden max-md:block">I appear on screens <= 780px</div>
+            <button
+                class="my-2 rounded-lg bg-blue-500 px-4 py-2 text-white duration-300 hover:bg-blue-700 focus:ring focus:ring-blue-300 active:bg-blue-800">Click
+                Me!</button>
+            <ul class="my-2 space-y-2">
+                <li class="bg-white p-2 first:bg-yellow-100">Item 1</li>
+                <li class="bg-white p-2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 1</li>
+                <li class="bg-white p-2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 1</li>
+                <li class="bg-white p-2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 1</li>
+                <li class="bg-white p-2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 1</li>
+            </ul>
+            <!-- Theme Dark -->
+            <div class="m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-black">
+                <h3 class="tracking-light text-base font-medium text-slate-900 dark:text-white">This is a text element
+                </h3>
+                <p class="mt-2 text-sm text-slate-500 dark:text-white">This is an even longer p tag element</p>
+                <button id="toggleDark" class="mt-8 rounded-md bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900"
+                    onclick="document.body.classList.toggle('dark')">Dark Mode</button>
+            </div>
+
+            <button class="special-button">Click Me!</button>
+            <p class="bg-stone-100 p-[16px] text-chestnut">ChestNut Color!!!</p>
+</main>
+
+<!-- // To showcase the demo of dark theme. Copy paste :) -->
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggleDark = document.getElementById('toggleDark')
+        toggleDark.addEventListener('click', function () {
+            if (document.documentElement.classList.includes('dark')) {
+                document.documentElement.classList.remove('dark')
+            }
+            else {
+                document.documentElement.classList.add('dark')
+            }
+            alert("click!")
+        });
+    });
+</script>
