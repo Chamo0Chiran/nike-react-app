@@ -1,6 +1,7 @@
 {
   "name": "nike-app-git",
   "private": true,
+  "homepage": "https://Chamo0Chiran.github.io/nike-react-app",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
